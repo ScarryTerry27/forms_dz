@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы|Задание 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>credit card details</h2>
+        <form action="/credit_card" method="POST">
+            <label for="numberCard">
+                <span>Card Number</span>
+                <input type="number" id="numberCard" name="numberCard" placeholder="0123 4567 8901">
+            </label>
+            <label for="userName">
+                <span>Name On Card</span>
+                <input type="text" id="userName" name="userName" placeholder="Name Surname">
+            </label>
+            <div class="cont">
+                <label for="month">
+                    <span>Expiry Date</span>
+                    <input type="number"
+                    id="month"
+                    name="month"
+                    min="1"
+                    max="12"
+                    maxlength="2"
+                    minlength="1"
+                    step='1'
+                    placeholder="2">                    
+                    <input type="number"
+                    id="year"
+                    name="year"
+                    min="2023"
+                    max="2030"
+                    maxlength="4"
+                    minlength="4"
+                    step='1'
+                    placeholder="2025">                    
+                </label>
+                <label for="password">
+                    <span>CVV/CVN</span>
+                    <input type="password"
+                    id="cvv"
+                    name="cvv"
+                    maxlength="3"
+                    minlength="3"
+                    step='1'
+                    placeholder="***">                    
+                </label>
+            </div>
+        </form>
+        <div class="img">
+            <div></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
