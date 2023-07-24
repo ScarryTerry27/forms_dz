@@ -180,7 +180,7 @@ input[type='radio']:checked + label::before {
     border-radius: 50%;
 	display: inline-block;
     border: solid green 1px;
-    background: url('./img/zel.png') 0 0 no-repeat;   
+    background: url('../img/zel.png') 0 0 no-repeat;   
     background-size: contain;
     z-index: 0;
 }

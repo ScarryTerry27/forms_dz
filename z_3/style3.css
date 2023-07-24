@@ -1,0 +1,208 @@
+:root {
+    --font-size: 14px;
+    --first-width: 900px;
+    --second-width: 600px;
+    --third-width: 300px;
+    --transition-all: all 1s ease;
+    --transform-all: scale(1.05);
+    --border: solid 1px black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size);
+}
+
+form{
+    position: relative;
+    margin: 0 auto;
+    width: var(--first-width);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form>div {
+    flex-basis: 49%;
+}
+
+.form1>div>label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.form1>:nth-child(2)>label {
+    background-image: url(../img/username.png);
+}
+
+.form1>:nth-child(3)>label {
+    background-image: url(../img/email.png);
+}
+
+.form1>:nth-child(4)>label {
+    background-image: url(../img/pswd.png);
+}
+
+.form1>div>input {
+    position: relative;
+    line-height: 20px;
+    left: 30px;
+    top: -24px;
+    border: none;
+    border-bottom: 1px grey solid;
+    box-shadow: 2px 2px 2px grey;
+}
+
+input[type='text'],
+input[type='email'] {
+    width: 80%;
+}
+
+input[type='password']{
+    width: 39.2%;
+}
+
+.form2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.form2>div {
+    display: flex;
+    justify-content: space-around;
+}
+.form2>div>input {
+    display: block;
+    width: 46%;
+    line-height: 20px;
+    border: none;
+    border-bottom: 1px grey solid;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.form2>:nth-child(2) {
+    margin-bottom: 28px;
+}
+
+.form2>div>select {
+    display: block;
+    width: 46%;
+    line-height: 20px;
+    border: none;
+    border-bottom: 1px grey solid;
+    box-shadow: 2px 2px 2px grey;
+}
+
+h2 {
+    margin-left: 5px;
+}
+
+.form3 {
+    margin-top: 50px;
+    flex-basis: 100%;
+}
+
+.form3>div>label {
+    position: relative;
+    top: -2px;
+}
+
+button{
+    text-transform: uppercase;
+    background-color: rgb(0, 94, 55);
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    bottom: -70px;
+    right: 5px;
+    width: 100px;
+    height: 40px;
+    border: rgba(128, 128, 128, 0.794);
+    border-radius: 5px;
+    transition: var(--transition-all);
+}
+
+button:hover{
+    transform: var(--transform-all);
+}
+
+@media screen and (max-width: 899px){
+    form{
+        width: var(--second-width);
+    }
+    
+    form>div {
+        flex-basis: 100%;
+    }
+    
+    input[type='text'],
+    input[type='email'] {
+        width: 90%;
+    }
+    
+    input[type='password']{
+        width: 44.5%;
+    }
+    
+    .form2>div>input {
+        width: 42.7%;
+        position: relative;
+        right: 5px;
+    }
+
+    .form2>div>select {
+        width: 42.7%;
+        right: 5px;
+    }
+    
+    button{
+        bottom: -55px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    form{
+        width: var(--third-width);
+    }
+    
+    form>div {
+        flex-basis: 100%;
+    }
+    
+    input[type='text'],
+    input[type='email'] {
+        width: 90%;
+    }
+    
+    input[type='password']{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .form2>div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form2>:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    .form2>div>input,
+    .form2>div>select {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    button{
+        bottom: -45px;
+    }
+}
