@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2|Формы</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+    <div class="cont1">
+        <h2>Inputs</h2>
+        <form class='form1' action="/form1" method="post">
+            <input type="text" placeholder="Enter some text" name="input1" id="input1">
+            <input type="text" placeholder="Valid text" name="input2" id="input2">
+            <div class="img1" style="background-image: url(./img/valid.png);"></div>
+            <input type="text" placeholder="Invalid text" name="input3" id="input3">
+            <div class="img2" style="background-image: url(./img/invalid.png);"></div>
+        </form>
+        <h2>Check boxes</h2>
+        <form class='form2' action="/form2" method="post">
+            <input type="checkbox" name="cb1" id="cb1" value='3' checked>
+            <label for='cb1' data-on-label="Subscribed" data-off-label="Subscribe?"></label>
+            <input type="checkbox" name="cb2" id="cb2" value='4'>
+            <label for='cb2' data-on-label="ON" data-off-label="OFF"></label>          
+        </form>
+        <h2>Radio buttons</h2>
+        <form class='form3' action="/form3" method="post">
+            <span>Gender:</span>
+            <input type="radio" name="rd" id="rd1" value='1' checked>
+            <label for='rd1'>Male</label>
+            <input type="radio" name="rd" id="rd2" value='2'>
+            <label for='rd2'>Female</label>          
+        </form>
+        <h2>Buttons</h2>
+        <div class="buttons">
+            <div class="active"><button>Active</button></div>
+            <div class="hover"><button>Hover</button></div>
+            <div class="danger"><button>Danger</button></div>
+            <div class="hover"><button>Hover</button></div>
+            <div class="disabled"><button disabled>Disabled</button></div>
+            <div class="red"><button>+</button></div>
+            <div class='green'><button>-</button></div>
+        </div>
+        <h2>Text area</h2>
+        <form action="form4" method="post">
+            <textarea name="textar" id="textar" placeholder="Enter some text..."></textarea>
+            <label for='textar'></label>
+        </form>
+    </div>
+</body>
+</html>
